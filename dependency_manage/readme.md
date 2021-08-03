@@ -18,4 +18,5 @@
 ```
 
 ---
-* 참고자료 : https://www.youtube.com/watch?v=y2kqs4d-Wf0&list=PLZPhyNeJvHRk9wIL9rZekFLIfT3aVcHT7&index=17 
+* 참고자료 : https://www.youtube.com/watch?v=y2kqs4d-Wf0&list=PLZPhyNeJvHRk9wIL9rZekFLIfT3aVcHT7&index=17
+* poetry 사용후기(및 버그 수정과정): https://spoqa.github.io/2019/08/09/brand-new-python-dependency-manager-poetry.html 
