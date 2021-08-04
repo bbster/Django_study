@@ -22,7 +22,7 @@ import itertools
 def solution():
     numbers = [6, 10, 2]
     numbers2 = [3, 30, 34, 5, 9]
-    numbers3 = [1, 40, 3, 5, 100,  7, 60,  9, 20, 50, 70]
+    numbers3 = [1, 40, 80, 3, 5, 100,  7, 60,  9, 20, 50, 70, 90]
     answer = ''
     convert_numbers = []
     result = []

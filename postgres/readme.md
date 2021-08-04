@@ -2,7 +2,7 @@
 ---
 * django interpreter 설정(env환경)
 * pip install psycopg2-binary
-* DATABASE 생성(Docker로 하는 방법만 정리 그외 설정은 나중에 ..)
+* DATABASE 생성(local 환경의 Docker로 하는 방법만 정리 그외 설정은 나중에 ..)
 ```python
 === docker container 생성 ===
 #!/usr/bin/env bash
