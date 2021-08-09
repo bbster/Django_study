@@ -159,4 +159,152 @@ def question_030():
     print(f"{string}")
 
 
-question_030()
+def question_031():
+    a = '3'
+    b = '4'
+    print(f"{a+b}")
+
+
+def question_032():
+    a = 'hi'
+    print(f"{a*3}")
+
+
+def question_033():
+    a = '-'
+    print(f"{a*80}")
+
+
+def question_034():
+    a = 'python'
+    b = 'java'
+    print(f"{(a+b)*4}")
+
+
+def question_035():
+    name1 = "김민수"
+    age1 = 10
+    name2 = "이철희"
+    age2 = 13
+
+    print("이름: %s, 나이: %d" % (name1, age1))
+    print("이름: %s, 나이: %d" % (name2, age2))
+
+
+def question_036():
+    name1 = "김민수"
+    age1 = 10
+    name2 = "이철희"
+    age2 = 13
+
+    print("이름: {}, 나이: {}".format(name1, age1))
+    print("이름: {}, 나이: {}".format(name2, age2))
+
+
+def question_037():
+    name1 = "김민수"
+    age1 = 10
+    name2 = "이철희"
+    age2 = 13
+
+    print(f"이름: {name1}, 나이: {age1}")
+    print(f"이름: {name2}, 나이: {age2}")
+
+
+def question_038():
+    상장주식수 = "5,969,782,550"
+    rep_data = int(상장주식수.replace(",", ""))
+
+    print(f"주식수: {rep_data}, data_type: {type(rep_data)}")
+
+
+def question_039():
+    분기 = "2020/03(E) (IFRS연결)"
+    slicing_data = 분기.split("(")
+    slicing_data2 = 분기[:7]
+
+    print(f"slicing_data: {slicing_data[0]}")
+    print(f"slicing_data2: {slicing_data2}")
+
+
+def question_040():
+    data = "    삼성전자     "
+    strip_data = data.strip()
+
+    print(f"strip_data(공백제거): {strip_data}")
+
+
+def question_041():
+    ticker = "btc_krw"
+    upper_ticker = ticker.upper()
+
+    print(f"upper_data(소문자=>대문자):{ticker} => {upper_ticker}")
+
+
+def question_042():
+    ticker = "BTC_KRW"
+    lower_ticker = ticker.lower()
+
+    print(f"upper_data(소문자=>대문자):{ticker} => {lower_ticker}")
+
+
+def question_043():
+    data = "hello"
+    captialize_data = data.capitalize()
+
+    print(f"cap_data(=맨앞자리 => 대문자):{data} => {captialize_data}")
+
+
+def question_044():
+    data = "보고서.xlsx"
+    endswith_data = data.endswith("xlsx")
+
+    print(f"endswith_data(해당문자로 끝나는지 체크):{endswith_data}")
+
+
+def question_045():
+    data = "보고서.xlsx"
+    endswith_data = data.endswith(("xlsx", "xls"))
+
+    print(f"endswith_data(해당문자로 끝나는지 체크):{endswith_data}")
+
+
+def question_046():
+    data = "2020_보고서.xlsx"
+    startswith_data = data.startswith("2020")
+
+    print(f"startswith_data():{startswith_data}")
+
+
+def question_047():
+    data = "hello world"
+    split_data = data.split(" ")
+
+    print(f"공백기준으로 나눠보기:{split_data}")
+
+
+def question_048():
+    ticker = "btc_krw"
+    split_ticker = ticker.split("_")
+
+    print(f"btc와 krw 나누기:{split_ticker}")
+
+
+def question_049():
+    data = "2020-05-20"
+    split_data = data.split("-")
+
+    print(f"년원일 split:{split_data}")
+
+
+def question_050():
+    data = "039485        "
+    strip_data = data.rstrip()
+
+    print(f"오른쪽 공백 제거:{strip_data}")
+
+
+def question_051():
+    movie_rank = ["닥터 스트레인지", "스플릿", "럭키"]
+    print(f"리스트 데이터 :{movie_rank}")
+question_051()
