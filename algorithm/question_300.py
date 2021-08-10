@@ -307,4 +307,176 @@ def question_050():
 def question_051():
     movie_rank = ["닥터 스트레인지", "스플릿", "럭키"]
     print(f"리스트 데이터 :{movie_rank}")
-question_051()
+
+
+def question_052():
+    movie_rank = ["닥터 스트레인지", "스플릿", "럭키"]
+    movie_rank.append("베트맨")
+    print(f"리스트 데이터 :{movie_rank}")
+
+
+def question_053():
+    movie_rank = ["닥터 스트레인지", "스플릿", "럭키"]
+    movie_rank.insert(1,  "슈퍼맨")
+    print(f"리스트 데이터 :{movie_rank}")
+
+
+def question_054():
+    movie_rank = ["닥터 스트레인지", "스플릿", "럭키"]
+    movie_rank.remove("럭키")
+    print(f"리스트 데이터 :{movie_rank}")
+
+
+def question_055():
+    movie_rank = ["닥터 스트레인지", "스플릿", "럭키"]
+    movie_rank.remove("럭키")
+    movie_rank.remove("스플릿")
+    print(f"리스트 데이터 :{movie_rank}")
+
+
+def question_056():
+    lang1 = ["C", "C++", "JAVA"]
+    lang2 = ["Python", "Go", "C#"]
+    langs = lang1 + lang2
+    print(f"리스트 데이터 :{langs}")
+
+
+def question_057():
+    nums = [1,2,3,4,5,6,7]
+    max_num = max(nums)
+    min_num = min(nums)
+    print(f"max_num :{max_num}")
+    print(f"min_num :{min_num}")
+
+
+def question_058():
+    nums = [1,2,3,4,5]
+    result = sum(nums)
+
+    print(f"result :{result}")
+
+
+def question_059():
+    nums = [1,2,3,4,5]
+    result = len(nums)
+    print(f"result :{result}")
+
+
+def question_060():
+    nums = [1,2,3,4,5]
+    result = sum(nums)
+    average = result / len(nums)
+
+    print(f"result :{average}")
+
+
+def question_061():
+    price = ["20102931", 100, 200, 300, 400]
+
+    print(f"result :{price[1:]}")
+
+
+def question_062():
+    price = [1,2,3,4,5,6,7,8,9,10]
+
+    print(f"result :{price[::2]}")
+
+
+def question_063():
+    price = [1,2,3,4,5,6,7,8,9,10]
+
+    print(f"result :{price[1::2]}")
+
+
+def question_064():
+    nums = [1, 2, 3, 4, 5]
+    reversed_nums = nums[::-1]
+    print(f"result :{reversed_nums}")
+
+
+def question_065():
+    data = ["삼성전자", "LG전자", "카카오"]
+
+    print(f"result :{data[0], data[2]}")
+
+
+def question_066():
+    data = ["삼성전자", "LG전자", "카카오", "대우", "MSI"]
+
+    print("result: ", "".join(data))
+
+
+def question_067():
+    data = ["삼성전자", "LG전자", "카카오", "대우", "MSI"]
+
+    print("result: ", "/".join(data))
+
+
+def question_068():
+    data = ["삼성전자", "LG전자", "카카오", "대우", "MSI"]
+
+    print("\n".join(data))
+
+
+def question_069():
+    string = "삼성전자/LG전자/SK"
+    interest = string.split("/")
+
+    print(interest)
+
+
+def question_070():
+    data = [1, 9, 2, 3, 8, 6, 5, 10, 4, 7]
+    data.sort()
+    print(f"result: {data}")
+
+
+def question_071():
+    data = ()
+    print(f"result: {type(data)}")
+
+
+def question_072():
+    data = ("닥터스트레인지", "스플릿", "럭키")
+    print(f"result: {data}")
+
+
+def question_073():
+    _integer = (1)
+    _tuple = (1, )
+    print(f"result: {type(_integer)}")
+    print(f"result: {type(_tuple)}")
+
+
+def question_075():
+    t1 = 1, 2, 3, 4
+    print(f"result: {type(t1)}")
+
+
+def question_076():
+    t1 = ('a', 'B', 'c')
+    print(f"result: {t1, type(t1)}")
+
+
+def question_077():
+    t1 = ('a', 'B', 'c')
+    t1_listed = list(t1)
+    print(f"result: {t1_listed, type(t1_listed)}")
+
+
+def question_078():
+    t1 = ['a', 'B', 'c']
+    t1_typled = tuple(t1)
+    print(f"result: {t1_typled, type(t1_typled)}")
+
+
+def question_079():
+    t1 = ('a', 'B', 'c')
+    a, b, c = t1
+    print(f"result: {a, b, c}")
+
+
+def question_080():
+    t1 = tuple(range(2, 100, 2))
+    print(f"reult: {t1}")
+question_080()
