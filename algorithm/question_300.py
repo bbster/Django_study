@@ -479,4 +479,297 @@ def question_079():
 def question_080():
     t1 = tuple(range(2, 100, 2))
     print(f"reult: {t1}")
-question_080()
+
+
+def question_081():
+    scores = [8.8, 8.9, 8.7, 9.2, 9.3, 9.7, 9.9, 9.5, 7.8, 9.4]
+    *a, _, _ = tuple(scores)
+    print(f"{a}")
+
+
+def question_082():
+    scores = [8.8, 8.9, 8.7, 9.2, 9.3, 9.7, 9.9, 9.5, 7.8, 9.4]
+    _, _, *c = tuple(scores)
+    print(f"{c}")
+
+
+def question_083():
+    scores = [8.8, 8.9, 8.7, 9.2, 9.3, 9.7, 9.9, 9.5, 7.8, 9.4]
+    _, *b, _ = tuple(scores)
+    print(f"{b}")
+
+
+def question_084():
+    temp = {}
+    print(f"{type(temp)}")
+
+
+def question_085():
+    temp = {"메로나": 1000, "플라포": 1200, "빵빠레": 1800}
+    print(f"{temp}")
+
+
+def question_086():
+    temp = {"메로나": 1000, "플라포": 1200, "빵빠레": 1800}
+    temp["죠스바"] = 1200
+    temp["월드콘"] = 1500
+    print(f"{temp}")
+
+
+def question_087():
+    temp = {"메로나": 1000, "플라포": 1200, "빵빠레": 1800}
+    temp["죠스바"] = 1200
+    temp["월드콘"] = 1500
+    print(f"메로나 가격: {temp['메로나']}")
+
+
+def question_088():
+    temp = {"메로나": 1000, "플라포": 1200, "빵빠레": 1800}
+    temp["죠스바"] = 1200
+    temp["월드콘"] = 1500
+    temp["메로나"] = 1300
+    print(f"메로나 가격: {temp['메로나']}")
+
+
+def question_089():
+    temp = {"메로나": 1000, "플라포": 1200, "빵빠레": 1800}
+    temp["죠스바"] = 1200
+    temp["월드콘"] = 1500
+    del temp["메로나"]
+    print(f"메로나 가격: {temp['메로나']}")
+
+
+def question_090():
+    temp = {"메로나": 1000, "플라포": 1200, "빵빠레": 1800}
+    temp["죠스바"] = 1200
+    temp["월드콘"] = 1500
+    del temp["메로나"]
+    print(f"메로나 가격: {temp['메로나']}")
+    # 메로나가 삭제되어 없는 키이기 때문에 에러 발생
+
+
+def question_091():
+    temp = {"메로나": [300, 20], "플라포": [400, 3], "빵빠레": [250, 100]}
+    print(f"메로나 가격: {temp}")
+
+
+def question_092():
+    temp = {"메로나": [300, 20], "플라포": [400, 3], "빵빠레": [250, 100]}
+    print(f"메로나 가격: {temp['메로나'][0]}")
+
+
+def question_093():
+    temp = {"메로나": [300, 20], "플라포": [400, 3], "빵빠레": [250, 100]}
+    print(f"메로나 재고: {temp['메로나'][1]}")
+
+
+def question_094():
+    temp = {"메로나": [300, 20], "플라포": [400, 3], "빵빠레": [250, 100]}
+    temp["월드콘"] = [500, 7]
+    print(f"월드콘 추가: {temp}")
+
+
+def question_095():
+    icecream = {'탱크보이': 1200, '폴라포': 1200, '빵빠레': 1800, '월드콘': 1500, '메로나': 1000}
+    temp = list(icecream.keys())
+    print(f"keys_list: {temp}")
+
+
+def question_096():
+    icecream = {'탱크보이': 1200, '폴라포': 1200, '빵빠레': 1800, '월드콘': 1500, '메로나': 1000}
+    temp = list(icecream.values())
+    print(f"values_list: {temp}")
+
+
+def question_097():
+    icecream = {'탱크보이': 1200, '폴라포': 1200, '빵빠레': 1800, '월드콘': 1500, '메로나': 1000}
+    temp = sum(icecream.values())
+    print(f"values 합: {temp}")
+
+
+def question_098():
+    icecream = {'탱크보이': 1200, '폴라포': 1200, '빵빠레': 1800, '월드콘': 1500, '메로나': 1000}
+    new_product = {'팥빙수': 2700, '아맛나': 1000}
+    icecream.update(new_product)
+    print(f"dict 합치기: {icecream}")
+
+
+def question_099():
+    keys = ("apple", "pear", "peach")
+    vals = (300, 250, 400)
+
+    result = dict(zip(keys, vals))
+    print(f"zip, dict: {result}")
+
+
+def question_100():
+    date = ['09/05', '09/06', '09/07', '09/08', '09/09']
+    close_price = [10500, 10300, 10100, 10800, 11000]
+
+    result = dict(zip(date, close_price))
+    print(f"zip, dict: {result}")
+
+
+def question_101():
+    pass
+    # 파이썬에서 True 혹은 False를 갖는 데이터 타입은? bool 타입
+
+
+def question_102():
+    print(3==5)
+    # False
+
+
+def question_103():
+    print(3 < 5)
+    # True
+
+
+def question_104():
+    x = 4
+    print(1 < x < 5)
+    # True
+
+
+def question_105():
+    print((3 == 3) and (4 != 3))
+    # 3은3과 같고 그리고 4는 3과 같지 않다
+    # True
+
+
+def question_106():
+    pass
+    # print(3 => 4)
+    # 지원하지 않는 연산자 / 에러 발생
+
+
+def question_107():
+    if 4 < 3:
+        print("Hello World")
+    # 아무것도 출력하지 않음
+
+
+def question_108():
+    if 4 < 3:
+        print("Hello World")
+    else:
+        print("Hi, there")
+    # Hi there 출력
+
+
+def question_109():
+    if True:
+        print("1")
+        print("2")
+    else:
+        print("3")
+    print("4")
+    # 1,2,4 출력
+
+
+def question_110():
+    if True:
+        if False:
+            print("1")
+            print("2")
+        else:
+            print("3")
+    else:
+        print("4")
+    print("5")
+    # 3,5 출력
+
+
+def question_111():
+    user_data = input("입력: ")
+    print(f"{user_data*2}")
+
+
+def question_112():
+    user_data = int(input("숫자 입력: "))
+    print(f"{user_data+10}")
+
+
+def question_113():
+    user_data = int(input("숫자 입력: "))
+    if user_data%2 == 0:
+        print(f"{user_data}는 짝수")
+    else:
+        print(f"{user_data}는 홀수")
+
+
+def question_114():
+    user_data = int(input("숫자 입력: "))
+    user_data += 20
+    if user_data <= 255:
+        print(f"{user_data}")
+    else:
+        print(f"255")
+
+
+def question_115():
+    user_data = int(input("숫자 입력: "))
+    user_data -= 20
+    if user_data <= 0:
+        print(f"0")
+    elif user_data >= 255:
+        print(f"255")
+    else:
+        print(f"{user_data}")
+
+
+def question_116():
+    user_data = input("입력: ")
+    split_data = user_data.split(":")
+    if int(split_data[1]) == 0:
+        print(f"정각")
+    else:
+        print(f"정각이 아닙니다")
+    """
+    user_data = input("입력: ")
+    if user_data[-2:] == "00":
+        print(f"정각")
+    else:
+        print(f"정각이 아닙니다")
+    """
+
+
+def question_117():
+    user_data = input("입력: ")
+    fruit = ["apple", "graph", "melon"]
+
+    if user_data in fruit:
+        print(f"정답입니다.")
+    else:
+        print(f"오답입니다.")
+
+
+def question_118():
+    user_data = input("입력: ")
+    warn_investment_list = ["microsoft", "samsung", "apple"]
+
+    if user_data in warn_investment_list:
+        print(f"투자경고주")
+    else:
+        print(f"투자해도 됨")
+
+
+def question_119():
+    user_data = input("입력: ")
+    fruit = {"spring": "strawberry", "summer": "tomato"}
+
+    if user_data in fruit.keys():
+        print(f"정답")
+    else:
+        print(f"오답")
+
+
+def question_120():
+    user_data = input("입력: ")
+    fruit = {"spring": "strawberry", "summer": "tomato"}
+
+    if user_data in fruit.values():
+        print(f"정답")
+    else:
+        print(f"오답")
+question_120()
