@@ -913,10 +913,7 @@ def question_129():
         print("유효하지 않은 주민등록번호입니다.")
 
 import requests
-
-
 def question_130():
-
     btc = requests.get("https://api.bithumb.com/public/ticker/").json()['data']
     calc_price = int(btc['opening_price']) + (int(btc['max_price']) - int(btc['min_price']))
 
