@@ -772,4 +772,157 @@ def question_120():
         print(f"정답")
     else:
         print(f"오답")
-question_120()
+
+
+def question_121():
+    user_data = input("입력: ")
+
+    if user_data.islower():
+        print(f"{user_data.upper()}")
+    else:
+        print(f"{user_data.lower()}")
+
+
+def question_122():
+    user_data = int(input("입력: "))
+
+    if 81 <= user_data <= 100:
+        print(f"score:{user_data}\ngrade: A")
+    elif 61 <= user_data <= 80:
+        print(f"score:{user_data}\ngrade: B")
+    elif 41 <= user_data <= 60:
+        print(f"score:{user_data}\ngrade: C")
+    elif 21 <= user_data <= 40:
+        print(f"score:{user_data}\ngrade: D")
+    else:
+        print(f"score:{user_data}\ngrade: E")
+
+
+def question_123():
+    user_data = input("입력: ")
+
+    user_money = int(user_data.split(" ")[0])
+    money = user_data.split(" ")[1]
+
+    if money == "달러":
+        print(f"{user_money * 1167}원")
+    elif money == "위안":
+        print(f"{user_money * 171}원")
+    elif money == "엔":
+        print(f"{user_money * 1.096}원")
+    elif money == "유로":
+        print(f"{user_money * 1268}원")
+    else:
+        print(f"변환 가능한 화폐가 아닙니다.")
+"""
+환율 = {"달러": 1167, 
+        "엔": 1.096, 
+        "유로": 1268, 
+        "위안": 171}
+user = input("입력: ")
+num, currency = user.split()
+print(float(num) * 환율[currency], "원")
+"""
+
+
+def question_124():
+    num1 = int(input("입력: "))
+    num2 = int(input("입력: "))
+    num3 = int(input("입력: "))
+
+    if num1 >= num2 and num1 >= num3:
+        print(f"{num1}")
+    elif num2 >= num1 and num2 >= num3:
+        print(f"{num2}")
+    else:
+        print(f"{num3}")
+
+
+def question_125():
+    phone_number = input("입력: ")
+    services = {
+        "011": "SKT",
+        "016": "KT",
+        "019": "LGU",
+        "010": "알수없음",
+    }
+
+    user_service = phone_number[:3]
+
+    print(f"당신은 {services[user_service]} 사용자입니다.")
+
+
+def question_126():
+    post_number = input("입력: ")
+    services = {
+        "0": "강북구",
+        "1": "강북구",
+        "2": "강북구",
+        "3": "도봉구",
+        "4": "도봉구",
+        "5": "도봉구",
+        "6": "노원구",
+        "7": "노원구",
+        "8": "노원구",
+        "9": "노원구",
+    }
+
+    user_post_name = post_number[2]
+
+    print(f"{services[user_post_name]}")
+
+
+def question_127():
+    id_number = input("입력: ")
+    services = {
+        "1": "남자",
+        "3": "남자",
+        "2": "여자",
+        "4": "여자",
+    }
+
+    user_sex = id_number.split("-")[1][0]
+
+    print(f"{services[user_sex]}")
+
+
+def question_128():
+    id_number = input("입력: ")
+
+    user_post = int(id_number.split("-")[1][-2:])
+    print(user_post)
+    if user_post <= 8:
+        print(f"서울")
+    elif 9 <= user_post <= 12:
+        print(f"부산")
+    else:
+        print(f"그외지역")
+
+
+def question_129():
+    num = input("주민등록번호: ")
+    calc1 = int(num[0]) * 2 + int(num[1]) * 3 + int(num[2]) * 4 + int(num[3]) * 5 + int(num[4]) * 6 + \
+          int(num[5]) * 7 + int(num[7]) * 8 + int(num[8]) * 9 + int(num[9]) * 2 + int(num[10]) * 3 + \
+          int(num[11]) * 4 + int(num[12]) * 5
+    calc2 = 11 - (calc1 % 11)
+    calc3 = str(calc2)
+
+    if num[-1] == calc3[-1]:
+        print("유효한 주민등록번호입니다.")
+    else:
+        print("유효하지 않은 주민등록번호입니다.")
+
+import requests
+
+
+def question_130():
+
+    btc = requests.get("https://api.bithumb.com/public/ticker/").json()['data']
+    calc_price = int(btc['opening_price']) + (int(btc['max_price']) - int(btc['min_price']))
+
+    if calc_price > int(btc['max_price']):
+        print(f"상승장")
+    else:
+        print(f"하락장")
+
+question_130()
