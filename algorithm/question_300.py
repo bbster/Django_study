@@ -922,4 +922,73 @@ def question_130():
     else:
         print(f"하락장")
 
-question_130()
+
+def question_131():
+    과일 = ["사과", "귤", "수박"]
+    for 변수 in 과일:
+        print(변수)
+
+
+def question_132():
+    과일 = ["사과", "귤", "수박"]
+    for 변수 in 과일:
+        print("#####")
+
+
+def question_133():
+    variable = "A"
+    print(f"{variable}")
+    variable = "B"
+    print(f"{variable}")
+    variable = "C"
+    print(f"{variable}")
+
+
+def question_134():
+    variable = "A"
+    print(f"출력: {variable}")
+    variable = "B"
+    print(f"출력: {variable}")
+    variable = "C"
+    print(f"출력: {variable}")
+
+
+def question_135():
+    variable = "A".lower()
+    print(f"변환: {variable}")
+    variable = "B".lower()
+    print(f"변환: {variable}")
+    variable = "C".lower()
+    print(f"변환: {variable}")
+
+
+def question_136():
+    variable = [10, 20, 30]
+    for value in variable:
+        print(value)
+
+
+def question_137():
+    for value in [10, 20, 30]:
+        print(value)
+
+
+def question_138():
+    for value in [10, 20, 30]:
+        print(value)
+        print("-----------")
+
+
+def question_139():
+    print("++++")
+    for value in [10, 20, 30, 4]:
+        print(value)
+
+
+def question_140():
+
+    for value in [10, 20, 30, 4]:
+        print("------")
+
+
+question_139()
